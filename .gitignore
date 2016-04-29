@@ -1,3 +1,4 @@
+.idea
 *.gem
 *.rbc
 /.config
@@ -14,12 +15,14 @@
 .dat*
 .repl_history
 build/
-
+Gemfile.lock
 ## Documentation cache and generated files:
 /.yardoc/
 /_yardoc/
 /doc/
 /rdoc/
+my_script.rb
+
 
 ## Environment normalization:
 /.bundle/
