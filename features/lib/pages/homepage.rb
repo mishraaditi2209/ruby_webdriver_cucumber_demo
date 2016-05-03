@@ -2,6 +2,7 @@ class Homepage < PageObject
   element :searchbox_keyword_input, {:class => "Searchbox__keyword__input"}
   element :searchbox_search_button, {:class => "Searchbox__search__button"}
   element :email, {:id => "email"}
+  element :logo, {id: 'logo'}
   element :id_keywords, {:id => "id_keywords"}
   element :is_basic_search_widget, {:id => "is-basic-search-widget"}
   element :is_search, {:name => "is_search"}
@@ -30,7 +31,7 @@ class Homepage < PageObject
   end
 
   def is_current_page?
-    searchbox_keyword_input.displayed?
+    logo.displayed?
   end
 
   def select_section(section)

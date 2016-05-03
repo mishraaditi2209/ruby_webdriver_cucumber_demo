@@ -31,14 +31,14 @@ Feature: Search in motors section
 
   Scenario: Search for a lowest price Apartment/Flat for Rent
     Given I am on dubizzle home page
-    When I select the Property For Rent on the menu
+    When I select the Property for Rent on the menu
     And I select section Residential Units for Rent
-    And I select Apartment/Flat for Rent
+    And I select sub category Apartment/Flat for Rent
     And I search
     And I sort result from Price Lowest to Highest
     Then I should see listings sorted from Price Lowest to Highest
 
-  Scenario Outline: Search for a lowest price Apartment/Flat for Rent
+  Scenario Outline: Search abc for a lowest price Apartment/Flat for Rent
     Given I am on dubizzle home page
     When I select the <section> on the menu
     And I select section <category>
