@@ -7,7 +7,7 @@ end
 
 When(/^I select the (.*) on the menu$/) do |section|
   home_page = Homepage.new(@driver)
-  (home_page.select_section(section).downcase).include?('dubai').should == true
+  (home_page.select_section(section.downcase).downcase).include?('dubai').should == true
 end
 
 And(/^I select section (.*)$/) do |category|
